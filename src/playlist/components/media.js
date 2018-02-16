@@ -1,20 +1,8 @@
-import React from 'react'
+import React, {PureComponent} from 'react'
 import '../../../styles/media.css'
 import PropTypes from 'prop-types'
 
-class Media extends React.Component {
-/*	constructor (props){
-		super(props)
-		this.state = {
-			author: props.author
-		}
-		// this.handleClick = this.handleClick.bind(this)
-	}*/
-	state = {
-		author: 'Geraldyn Chirinos',
-		image: './images/covers/html5.jpg',
-	}
-
+class Media extends PureComponent {
 	render(){
 		return (
 			<div className="Media">
