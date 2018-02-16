@@ -9,10 +9,10 @@ function Playlist (props) {//componente funcional
 	const category = props.data.categories
 	return(
 		<div>
-			<Play size={25} color="red" />
+			{/*<Play size={25} color="red" />
 			<Volume size={85} color="magenta" />
 			<Pause size={105} color="blue" />
-			<Fullscreen size={125} color="cian" />
+			<Fullscreen size={125} color="cian" />*/}
 		{
 			category.map((item)=>{
 				return(
