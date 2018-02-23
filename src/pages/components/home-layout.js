@@ -2,9 +2,9 @@ import React from 'react'
 
 function HomeLayout(props){
 	return(
-		<section>
+		<div className="containerCuerpoPrin">
 			{props.children}
-		</section>
+		</div>
 	)
 }
 export default HomeLayout;
