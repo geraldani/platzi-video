@@ -7,7 +7,7 @@ function Playlist (props) {//componente funcional
 		<div className="containerMedia">
 			{
 				props.playlistElem.map((elem)=>{
-					return ( <Media {...elem} key={elem.id} /> )
+					return ( <Media {...elem} key={elem.id} handleClick={props.handleClick}/> )
 				})
 			}
 		</div>

@@ -3,14 +3,10 @@ import modalStyle from './modal.css'
 
 function Modal (props){
 	return (
-		// <div className={props.isToggleOn ? "modalContainer" : "modalContainer modal-close"}>
-		<div className="modalContainer">
-			{props.children}
-			<button onClick={props.handleClick}>
-			{
-				props.isToggleOn ? 'ON' : 'OFF'
-			}
-			</button>
+		// <div className="modalContainer">{/*usando la forma sin CSS*/}
+		  <div className="modalContainer modal-close" id="contenedorModal">{/*usando la forma con css}*/}
+			<h1>este si es mi modal</h1>
+			<button onClick={props.handleClick}>CERRAR</button>
 		</div>
 	)
 }

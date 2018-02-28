@@ -1,0 +1,25 @@
+.RegularError{
+	background: #fff9cc;
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  	color: #847f7d;
+  	text-align: center;
+}
+.RegularError div{
+	height: 360px;
+}
+
+.RegularError p{
+	font-size: 2em;
+}
+p.RegularError-emojis {
+  opacity: .85;
+  font-size: 150px;
+  margin: 0;
+}
+.RegularError p a{
+	border-bottom: 2px solid silver;
+}

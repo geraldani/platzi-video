@@ -11,5 +11,9 @@
 
 .modal-close{
 	top:100%;
+	transition: all .8s;
+}
+.modal-open{
+	top: calc(100% - 150px);
 	transition: all 1s;
 }

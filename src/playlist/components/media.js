@@ -1,20 +1,18 @@
-import React, {PureComponent} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
-class Media extends PureComponent {
-	render(){
-		return (
-			<div className="Media">
-				<a href={this.props.src} target="_blank">
-					<div className="imageContainer">
-						<img className={`Media-cover imagen-${this.props.id}`} src={this.props.cover} alt={"imagen"+this.props.id} />
-					</div>
-						<h3 className="Media-title">{this.props.title}</h3>
-						<p className="Media-author">{this.props.author}</p>
-				</a>
-			</div>
-		)
-	}
+function Media (propiedades) {
+	return (
+		<div className="Media" onClick={propiedades.handleClick}>
+			{/*<a href={propiedades.src} target="_blank">*/}
+				<div className="imageContainer">
+					<img className={`Media-cover imagen-${propiedades.id}`} src={propiedades.cover} alt={"imagen"+propiedades.id} />
+				</div>
+				<h3 className="Media-title">{propiedades.title}</h3>
+				<p className="Media-author">{propiedades.author}</p>
+			{/*</a>*/}
+		</div>
+	)
 }
 //esta seccion es para validar
 Media.propTypes = {
