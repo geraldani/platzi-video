@@ -22,4 +22,6 @@ p.RegularError-emojis {
 }
 .RegularError p a{
 	border-bottom: 2px solid silver;
+	color: cadetblue;
+	background-color: #fe6196;
 }
