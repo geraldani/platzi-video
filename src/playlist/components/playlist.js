@@ -1,5 +1,6 @@
 import React from 'react'
 import Media from './media.js'
+import './playlist.css'
 
 function Playlist (props) {//componente funcional
 	// const category = props.data.categories

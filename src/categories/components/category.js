@@ -6,7 +6,7 @@ function Category (props){
 		<div id={'categoria-'+props.id} className="containerCategory">
 			<p>{props.description}</p>
 			<h2>{props.title}</h2>
-			<Playlsist playlistElem={props.playlist} handleClick={props.handleClick} />
+			<Playlist playlistElem={props.playlist} handleClick={props.handleClick} />
 		</div>
 	)
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Category from './category.js'
+import './category.css'
 function Categories (props){
 	return (
 		<section className="seccion-media" id="categoriaPrincipal">

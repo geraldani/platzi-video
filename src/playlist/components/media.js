@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './playlist.css'
 
 function Media (propiedades) {
 	return (
@@ -19,5 +20,5 @@ Media.propTypes = {
 	cover: PropTypes.string,
 	title: PropTypes.string.isRequired,
 	author: PropTypes.string
-}
+};
 export default Media;

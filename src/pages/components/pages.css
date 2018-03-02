@@ -1,0 +1,16 @@
+.containerCuerpoPrin{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.seccion-related{
+	width: 20%;
+	background-color: rgb(23,27,46);
+}
+.logoContainer{
+	width: 70%;
+}
+
+.logoContainer img{
+	width: 100%;
+}

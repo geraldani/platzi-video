@@ -1,9 +1,8 @@
 import React from 'react';//importando react, sirve para crear los componentes
 import ReactDOM from 'react-dom'; //importando react-dom, sirve para renderizar los componentes
 import Home from '../pages/containers/home'
-import Playlist from '../playlist/components/playlist'
 import data from '../api.json'
-import '../../styles/styles.css'//ESTILOS
+import './home.css'//ESTILOS
 
 
 const container = document.getElementById('home-container');
