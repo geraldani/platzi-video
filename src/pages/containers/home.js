@@ -1,12 +1,11 @@
 //componente SMART o container
+
 import React, { Component } from 'react';
-//dumb componet
 import HomeLayout from '../components/home-layout'
 import Categories from '../../categories/components/categories.js'
 import RelatedLayout from '../components/related-layout'
-import Modal from '../../modal/components/modal'
-//Smart components
-import ModalContainer from '../../modal/containers/modal-container'
+import Modal from '../../widgets/components/modal'
+import ModalContainer from '../../widgets/containers/modal-container'
 import HandleError from '../../error/containers/handleError'
 
 class Home extends Component{

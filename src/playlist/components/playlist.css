@@ -16,8 +16,8 @@
 	white-space: normal;
 }
 .Media-author{
-	font-size: 12px;
 	margin: 5px 0 0 0;
+	font-size: 12px;
 }
 .Media:hover .Media-cover{
 	box-shadow: 0 0 10px rgba(0,0,0,.3)
