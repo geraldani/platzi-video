@@ -4,7 +4,7 @@ import './playlist.css'
 
 function Media (propiedades) {
 	return (
-		<div className="Media" onClick={propiedades.handleClick}>
+		<div className="Media" onClick={()=>propiedades.handleClick(propiedades.title,propiedades.author)}>
 			{/*<a href={propiedades.src} target="_blank">*/}
 				<div className="imageContainer">
 					<img className={`Media-cover imagen-${propiedades.id}`} src={propiedades.cover} alt={"imagen"+propiedades.id} />

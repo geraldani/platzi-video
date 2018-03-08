@@ -8,7 +8,12 @@
 	box-shadow:0 0 10px rgba(0,0,0,.4);
 	padding:10px;
 }
-
+.modalContainer h2,
+.modalContainer h3{
+	color: white;
+	font-weight: normal;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .modal-close{
 	top:100%;
 	transition: all .8s;
@@ -16,4 +21,12 @@
 .modal-open{
 	top: calc(100% - 150px);
 	transition: all 1s;
+}
+.modalContainer h2{
+	font-size: 20px;
+}
+
+.modalContainer h3{
+	font-size: 17px;
+	margin-bottom: 20px;
 }
