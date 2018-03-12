@@ -1,0 +1,37 @@
+.video-player{
+	width: 300px;
+	height: 200px;
+	position: relative;
+	background: rgba(55,55,55,.8);
+}
+.video{
+	width: inherit;
+	margin:0;
+	padding: 0;
+	height: calc(200px - 30px);
+}
+
+.video video{
+	width: inherit;
+	height: inherit;
+	vertical-align: middle;
+	margin:0;
+	padding: 0;
+	object-fit: fill;
+}
+.Title{
+	position: absolute;
+	width: calc(300px - 40px);
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	color: white;
+	padding: 10px 20px;
+}
+
+.Title h2{
+	margin: 0;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+}
