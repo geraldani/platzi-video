@@ -1,5 +1,5 @@
 import React from 'react'
-import './videoPlayer.css'
+import './styles/videoPlayer.css'
 
 const VideoPlayerLayout = (props)=>(
     <div className="video-player">

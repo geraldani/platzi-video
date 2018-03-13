@@ -30,7 +30,7 @@ class Home extends Component {
                     <Categories handleClick={this.handleOpenModal} categories={this.props.data.categories}/>
                     <ModalContainer>
                         <Modal handleClick={this.handleCloseModal}>
-                            <VideoPlayer />
+                            <VideoPlayer autoplay={false}/>
                         </Modal>
                     </ModalContainer>
                 </HomeLayout>

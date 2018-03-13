@@ -1,0 +1,36 @@
+$width=300px
+$height=200px
+$padding=20px
+
+.video-player
+  width $width
+  height $height
+  position relative
+  background rgba(55,55,55,.8)
+
+.video
+  width inherit
+  margin 0
+  padding 0
+  height "calc(%s - 30px)" % ($height)
+  video
+    width inherit
+    height inherit
+    vertical-align middle
+    margin 0
+    padding 0
+    object-fit fill
+
+.Title
+  position absolute
+  width "calc(%s - %s)" % ($width $padding*2)
+  top 0
+  left 0
+  background rgba(0,0,0,.5)
+  color white
+  padding 10px $padding
+  h2
+    margin 0
+    font-size 16px
+    font-weight normal
+    text-align center

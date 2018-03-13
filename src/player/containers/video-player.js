@@ -6,24 +6,18 @@ import PlayPause from '../components/play-pause'
 
 class VideoPlayer extends Component{
     state = {
-        isPlayed: false
+        isPlayed: this.props.autoplay
     };
     handleToggleClick = (evento)=>{
         this.setState({
             isPlayed: !this.state.isPlayed,
         });
-       /* if(action==="play"){
-            this.setState({
-                isPlayed: true,
-            });
-        }
-        if(action==="pause") {
-            this.setState({
-                isPlayed: false,
-            });
-        }*/
-        console.log(this.state.isPlayed)
     };
+    componentDidMount(){
+        this.setState({
+            isPlayed: !this.props.autoplay
+        })
+    }
 
     render(){
         return(
@@ -31,7 +25,7 @@ class VideoPlayer extends Component{
                 <Title title="Esto es un video chido"/>
                 <Video
                     url="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
-                    autoplay={true}
+                    autoplay={this.props.autoplay}
                 />
                 <PlayPause
                     isPlayed={this.state.isPlayed}
