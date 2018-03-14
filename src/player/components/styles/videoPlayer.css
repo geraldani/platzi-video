@@ -17,6 +17,10 @@
   margin: 0;
   padding: 0;
   object-fit: fill;
+  -webkit-object-fit: fill;
+  -moz-object-fit: fill;
+  -o-object-fit: fill;
+  -ms-object-fit: fill;
 }
 .Title {
   position: absolute;

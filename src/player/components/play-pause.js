@@ -8,8 +8,8 @@ function PlayPause (props) {
         <div className="PlayPause">
             {
                 props.isPlayed ? //pregunta si la propiedad isPlayed es verdadera, y si lo es selecciona el boton de play sino seleccionara el de pause
-                    <button onClick={props.handleClick}><Play color="hotpink"/></button> :
-                    <button onClick={props.handleClick}><Pause color="brown"/></button>
+                    <button onClick={props.handleClick}><Play color="white"/></button> :
+                    <button onClick={props.handleClick}><Pause color="white"/></button>
             }
         </div>
     )

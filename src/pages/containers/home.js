@@ -11,15 +11,12 @@ import VideoPlayer from '../../player/containers/video-player'
 
 class Home extends Component {
     handleCloseModal = () => {
-        let el = document.getElementById('contenedorModal');
-        el.className = "modalContainer modal-close"
+        this.modalContainer.className = "modalContainer modal-close"
     };
     handleOpenModal = (tit, aut) => {
-        let el = document.getElementById('contenedorModal');
-        el.className = "modalContainer modal-open";
-        let info = document.getElementById('reproduciendoInfo');//se obtine el dom donde contiene el titulo que se quiere cambiar
-        info.children[0].textContent = tit;//se reemplaza lo que estaba ahi por el titulo del objeto donde se hizo click
-        info.children[1].textContent = aut;//igual aqui pero con el autor
+        this.modalContainer.className = "modalContainer modal-open";
+        this.infoTit.children[0].textContent = tit;//se reemplaza lo que estaba ahi por el titulo del objeto donde se hizo click
+        this.infoTit.children[1].textContent = aut;//igual aqui pero con el autor
     };
 
     render() {
@@ -27,10 +24,13 @@ class Home extends Component {
             <HandleError>
                 <HomeLayout>
                     <RelatedLayout/>
-                    <Categories handleClick={this.handleOpenModal} categories={this.props.data.categories}/>
+                    <Categories handleClick={this.handleOpenModal} categories={this.props.data.categories} />
                     <ModalContainer>
-                        <Modal handleClick={this.handleCloseModal}>
-                            <VideoPlayer autoplay={false}/>
+                        <Modal
+                            handleClick={this.handleCloseModal}
+                            titRef={ el => this.infoTit = el }
+                            modalContainer={ el => this.modalContainer = el}>
+                            <VideoPlayer autoplay={false} />
                         </Modal>
                     </ModalContainer>
                 </HomeLayout>

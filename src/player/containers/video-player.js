@@ -26,6 +26,7 @@ class VideoPlayer extends Component{
                 <Video
                     url="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
                     autoplay={this.props.autoplay}
+                    playing={this.state.isPlayed}
                 />
                 <PlayPause
                     isPlayed={this.state.isPlayed}

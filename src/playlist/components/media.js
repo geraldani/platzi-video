@@ -2,15 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './playlist.css'
 
-function Media (propiedades) {
+function Media (props) {
 	return (
-		<div className="Media" onClick={()=>propiedades.handleClick(propiedades.title,propiedades.author)}>
+		<div className="Media" onClick={() => props.handleClick(props.title,props.author)}>
 			{/*<a href={propiedades.src} target="_blank">*/}
 				<div className="imageContainer">
-					<img className={`Media-cover imagen-${propiedades.id}`} src={propiedades.cover} alt={"imagen"+propiedades.id} />
+					<img className={`Media-cover imagen-${props.id}`} src={props.cover} alt={"imagen"+props.id} />
 				</div>
-				<h3 className="Media-title">{propiedades.title}</h3>
-				<p className="Media-author">{propiedades.author}</p>
+				<h3 className="Media-title">{props.title}</h3>
+				<p className="Media-author">{props.author}</p>
 			{/*</a>*/}
 		</div>
 	)

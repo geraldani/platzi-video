@@ -1,10 +1,19 @@
-$width=300px
-$height=200px
-$padding=20px
+width=300px
+height=200px
+padding=20px
+vendor(props,values)//esto es para declarar los prefijos que usan los navegadores
+  {props} values
+  -webkit-{props} values
+  -moz-{props} values
+  -o-{props} values
+  -ms-{props} values
+
+object-fit()
+  vendor('object-fit',arguments) //tiene que ser estrictamente la palabra arguments y sin pasarle parametros en la definicion de la funcion
 
 .video-player
-  width $width
-  height $height
+  width width
+  height height
   position relative
   background rgba(55,55,55,.8)
 
@@ -12,7 +21,7 @@ $padding=20px
   width inherit
   margin 0
   padding 0
-  height "calc(%s - 30px)" % ($height)
+  height "calc(%s - 30px)" % (height)
   video
     width inherit
     height inherit
@@ -23,12 +32,12 @@ $padding=20px
 
 .Title
   position absolute
-  width "calc(%s - %s)" % ($width $padding*2)
+  width "calc(%s - %s)" % (width padding*2)
   top 0
   left 0
   background rgba(0,0,0,.5)
   color white
-  padding 10px $padding
+  padding 10px padding
   h2
     margin 0
     font-size 16px
