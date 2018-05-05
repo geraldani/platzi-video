@@ -11,9 +11,8 @@ class SearchContainer extends Component{
 
     handleInputChange = (evento) => {
         this.setState({
-            valorInput: evento.target.value.replace(' ','-')//transforma la cadena introducida, quitandole los espacios en blanco y poniendole guion
+            valorInput: this.inputElement.value.replace(' ','-')//transforma la cadena introducida, quitandole los espacios en blanco y poniendole guion
         });
-        console.log(this.inputElement.value)
     };
     setInputRef = (elementoHTML) =>{//esta funcion se puede llamar como sea, no es especifica al framework
       this.inputElement = elementoHTML;//el elemento html es el elemento del dom al que se hace referecnia en el componente hijo

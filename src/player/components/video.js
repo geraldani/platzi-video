@@ -16,14 +16,14 @@ class Video extends Component{
             <div className="video">
                 <video
                    autoPlay={this.props.autoplay}
-                    src={this.props.url}
-                   muted
+                   src={this.props.url}
                    ref={ elementHTML => this.videoElement = elementHTML}
+                   onLoadedMetadata={this.props.handleLoadedMetaData}
+                   onTimeUpdate={this.props.handleTimeUpdate}
                 />
             </div>
         )
     }
-
 }
 export default Video;
 
