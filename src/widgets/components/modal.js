@@ -4,7 +4,7 @@ import './styles/modal.css'
 function Modal (props){
 	return (
 		// <div className="modalContainer">{/*usando la forma sin CSS*/}
-		  <div className="modalContainer modal-close" ref={props.modalContainer}>{/*usando la forma con css*/}
+		  <div className={props.styleModal} ref={props.modalContainer}>{/*usando la forma con css*/}
 			  {props.children}
 		  	<h2>Estas viendo</h2>
 			<h3 ref={props.titRef}>

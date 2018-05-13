@@ -9,18 +9,21 @@ import HandleError from '../../error/containers/handleError'
 import VideoPlayer from '../../player/containers/video-player'
 
 class Home extends Component {
-    state = {
+    styleOpen = "modalContainer modal-open";
+    styleClose = "modalContainer modal-close";
+
+    state = {//estado inicial
         titu: '',
-        modalVisible: false,
+        modalVisible: true,
     };
     handleCloseModal = () => {
-        this.modalContainer.className = "modalContainer modal-close";
+        this.modalContainer.className = this.styleClose;
         this.setState({
             modalVisible: false,
         });
     };
     handleOpenModal = (tit, aut) => {
-        this.modalContainer.className = "modalContainer modal-open";
+        this.modalContainer.className = this.styleOpen;
         this.infoTit.children[0].textContent = tit;//se reemplaza lo que estaba ahi por el titulo del objeto donde se hizo click
         this.infoTit.children[1].textContent = aut;//igual aqui pero con el autor
         this.setState({
@@ -39,7 +42,8 @@ class Home extends Component {
                         <Modal
                             handleClick={this.handleCloseModal}
                             titRef={el => this.infoTit = el}
-                            modalContainer={el => this.modalContainer = el}>
+                            modalContainer={el => this.modalContainer = el}
+                            styleModal={this.state.modalVisible ? this.styleOpen : this.styleClose}>
                             <VideoPlayer autoplay={false} titulo={this.state.titu}/>
                         </Modal>
                     </ModalContainer>

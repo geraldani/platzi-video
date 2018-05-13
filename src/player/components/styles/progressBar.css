@@ -1,0 +1,63 @@
+progress.progressBar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: -4px;
+}
+progress.progressBar:hover {
+  height: 10px;
+  top: -10px;
+  transition: all 0.6s;
+}
+progress.progressBar::-webkit-progress-bar {
+  border: none;
+  outline: none;
+  background-color: rgba(80,80,80,0.7);
+}
+progress.progressBar::-webkit-progress-value {
+  background-color: rgba(255,73,112,0.7);
+}
+input[type=range].progressBar {
+  -webkit-appearance: none;
+  background: transparent;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  top: -4px;
+}
+input[type=range].progressBar:focus {
+  outline: none;
+}
+input[type=range].progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: #a9a9a9;
+  cursor: pointer;
+  margin-top: -3px;
+  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+}
+input[type=range].progressBar::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range].progressBar::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
