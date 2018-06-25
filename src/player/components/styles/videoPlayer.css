@@ -1,6 +1,6 @@
 .video-player {
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 250px;
   position: relative;
   background: rgba(55,55,55,0.8);
 }
@@ -8,7 +8,8 @@
   width: inherit;
   margin: 0;
   padding: 0;
-  height: calc(200px - 30px);
+  height: calc(250px - 30px);
+  overflow: hidden;
 }
 .video video {
   width: inherit;
@@ -16,15 +17,15 @@
   vertical-align: middle;
   margin: 0;
   padding: 0;
-  object-fit: fill;
-  -webkit-object-fit: fill;
-  -moz-object-fit: fill;
-  -o-object-fit: fill;
-  -ms-object-fit: fill;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -o-object-fit: cover;
+  -ms-object-fit: cover;
 }
 .Title {
   position: absolute;
-  width: calc(300px - 40px);
+  width: calc(500px - 40px);
   top: 0;
   left: 0;
   background: rgba(0,0,0,0.5);

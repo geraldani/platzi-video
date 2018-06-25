@@ -1,5 +1,5 @@
-width=300px
-height=200px
+width=500px
+height=250px
 padding=20px
 vendor(props,values)//esto es para declarar los prefijos que usan los navegadores
   {props} values
@@ -22,13 +22,14 @@ object-fit()
   margin 0
   padding 0
   height "calc(%s - 30px)" % (height)
+  overflow hidden
   video
     width inherit
     height inherit
     vertical-align middle
     margin 0
     padding 0
-    object-fit fill
+    object-fit cover
 
 .Title
   position absolute

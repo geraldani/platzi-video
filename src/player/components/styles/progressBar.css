@@ -1,63 +1,113 @@
-progress.progressBar {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  height: 4px;
-  width: 100%;
-  position: absolute;
-  top: -4px;
-}
-progress.progressBar:hover {
-  height: 10px;
-  top: -10px;
-  transition: all 0.6s;
-}
-progress.progressBar::-webkit-progress-bar {
-  border: none;
-  outline: none;
-  background-color: rgba(80,80,80,0.7);
-}
-progress.progressBar::-webkit-progress-value {
-  background-color: rgba(255,73,112,0.7);
-}
+/*.progressBarDiv
+  position absolute
+  bottom 0
+  margin 0
+  width 100%
+  height alto
+progress
+  &.progressBar
+    -webkit-appearance none
+    -moz-appearance none
+    appearance none
+    height alto
+    width 100%
+    position absolute
+    top - alto
+    &:hover
+      height 10px
+      top -10px
+      transition all 0.6s
+    &::-webkit-progress-bar
+      border none
+      outline none
+      background-color rgba(80,80,80,0.7)
+
+    &::-webkit-progress-value
+      background-color rgba(255,73,112,.7)*/
 input[type=range].progressBar {
   -webkit-appearance: none;
-  background: transparent;
-  height: 4px;
   width: 100%;
-  position: absolute;
   margin: 0;
-  top: -4px;
+  height: 8px;
+  position: absolute;
+  top: -7px;
+  background-color: transparent;
 }
 input[type=range].progressBar:focus {
   outline: none;
 }
-input[type=range].progressBar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid #000;
-  height: 13px;
-  width: 13px;
-  border-radius: 50%;
-  background: #a9a9a9;
-  cursor: pointer;
-  margin-top: -3px;
-  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+input[type=range].progressBar:focus::-webkit-slider-runnable-track {
+  background: rgba(27,89,150,0.75);
 }
-input[type=range].progressBar::-ms-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
+input[type=range].progressBar:focus::-ms-fill-lower {
+  background: rgba(23,76,128,0.75);
+}
+input[type=range].progressBar:focus::-ms-fill-upper {
+  background: rgba(27,89,150,0.75);
 }
 input[type=range].progressBar::-webkit-slider-runnable-track {
   width: 100%;
-  height: 8.4px;
+  height: 5.3px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
+  box-shadow: 0 0 0 #000, 0px 0px 0px #0d0d0d;
+  background: rgba(23,76,128,0.75);
+  border-radius: 25px;
+  border: 0 solid #000101;
+}
+input[type=range].progressBar::-webkit-slider-thumb {
+  box-shadow: 0 0 0 #4a87c5, 0px 0px 0px #5d94cb;
+  border: 0 solid #91786f;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: rgba(119,141,166,0.94);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -2px;
+}
+input[type=range].progressBar::-moz-range-track {
+  width: 100%;
+  height: 5.3px;
+  cursor: pointer;
+  box-shadow: 0 0 0 #000, 0 0 0 #0d0d0d;
+  background: rgba(23,76,128,0.75);
+  border-radius: 25px;
+  border: 0 solid #000101;
+}
+input[type=range].progressBar::-moz-range-thumb {
+  box-shadow: 0 0 0 #4a87c5, 0 0 0 #5d94cb;
+  border: 0 solid #91786f;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background: rgba(119,141,166,0.94);
+  cursor: pointer;
+}
+input[type=range].progressBar::-ms-track {
+  width: 100%;
+  height: 5.3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+}
+input[type=range].progressBar::-ms-fill-lower {
+  background: rgba(19,63,106,0.75);
+  border: 0 solid #000101;
+  border-radius: 50px;
+  box-shadow: 0 0 0 #000, 0 0 0 #0d0d0d;
+}
+input[type=range].progressBar::-ms-fill-upper {
+  background: rgba(23,76,128,0.75);
+  border: 0 solid #000101;
+  border-radius: 50px;
+  box-shadow: 0 0 0 #000, 0 0 0 #0d0d0d;
+}
+input[type=range].progressBar::-ms-thumb {
+  box-shadow: 0 0 0 #4a87c5, 0 0 0 #5d94cb;
+  border: 0 solid #91786f;
+  width: 15px;
+  border-radius: 50px;
+  background: rgba(119,141,166,0.94);
+  cursor: pointer;
+  height: 5.3px;
 }
